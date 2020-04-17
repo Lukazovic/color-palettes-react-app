@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
+import Snackbar from "@material-ui/core/Snackbar";
+import IconButton from "@material-ui/core/IconButton";
+import CloseIcon from "@material-ui/icons/Close";
+
 import Slider from "rc-slider";
 import logo from "./logo.svg";
 import "rc-slider/assets/index.css";
@@ -9,16 +13,20 @@ import "./Navbar.css";
 export default class Navbar extends Component {
   constructor(props) {
     super(props);
-    this.state = { format: "hex" };
+    this.state = { format: "hex", open: false };
     this.handleSelectChange = this.handleSelectChange.bind(this);
+    this.closeSnackBar = this.closeSnackBar.bind(this);
   }
   handleSelectChange(evt) {
-    this.setState({ format: evt.target.value });
+    this.setState({ format: evt.target.value, open: true });
     this.props.changeFormat(evt.target.value);
   }
+  closeSnackBar() {
+    this.setState({ open: false });
+  }
   render() {
-    const { level, changeLevel, changeFormat } = this.props;
-    const { format } = this.state;
+    const { level, changeLevel } = this.props;
+    const { format, open } = this.state;
     return (
       <header className="Navbar">
         <div className="logo">
@@ -44,6 +52,28 @@ export default class Navbar extends Component {
             <MenuItem value="rgba">RGBA - rgba (255, 255, 255, 1.0)</MenuItem>
           </Select>
         </div>
+        <Snackbar
+          anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
+          open={open}
+          autoHideDuration={2000}
+          onClose={this.closeSnackBar}
+          ContentProps={{ "aria-describedby": "message" }}
+          action={[
+            <IconButton
+              onClick={this.closeSnackBar}
+              color="inherit"
+              key="close"
+              aria-label="close"
+            >
+              <CloseIcon />
+            </IconButton>,
+          ]}
+          message={
+            <span id="message-id">
+              Format Changed to {format.toUpperCase()}
+            </span>
+          }
+        />
       </header>
     );
   }
