@@ -1,9 +1,10 @@
 import React from "react";
 import Palette from "./Palette";
 import seedColors from "./utils/seedColors";
-// import "./App.css";
+import { generatePalette } from "./utils/colorHelpers";
 
 function App() {
+  console.log(generatePalette(seedColors[4]));
   return (
     <div className="App">
       <Palette {...seedColors[4]} />
