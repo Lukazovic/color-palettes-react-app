@@ -24,6 +24,7 @@ function generatePalette(starterPalette) {
           .replace(")", ",1.0)"),
       })
     );
+    return null;
   });
   return newPalette;
 }
