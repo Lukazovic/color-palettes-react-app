@@ -20,7 +20,7 @@ function generatePalette(starterPalette) {
         rgb: chroma(scale[index]).css(),
         rgba: chroma(scale[index])
           .css()
-          .replace("rgba", "rgba")
+          .replace("rgb", "rgba")
           .replace(")", ",1.0)"),
       })
     );
