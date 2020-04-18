@@ -6,6 +6,11 @@
 }
 
 .logo {
+  text-decoration: none;
+  color: black;
+}
+
+.logo-items {
   margin-right: 15px;
   padding: 0 13px;
   font-size: 22px;
@@ -15,15 +20,12 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-}
-
-.logo img {
-  margin-right: 0.5rem;
-}
-
-.logo a {
   text-decoration: none;
   color: black;
+}
+
+.logo-items img {
+  margin-right: 0.5rem;
 }
 
 .slider {
