@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ColorBox from "./ColorsBox";
+import ColorBox from "./ColorBox";
 import Navbar from "./Navbar";
 import PaletteFooter from "./PaletteFooter";
 import "./Palette.css";
@@ -26,7 +26,7 @@ export default class Palette extends Component {
         name={color.name}
         key={color.id}
         moreUrl={`/palette/${id}/${color.id}`}
-        showLink
+        showingFullPalette
       />
     ));
     return (

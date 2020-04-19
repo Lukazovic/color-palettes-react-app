@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
-import ColorBox from "./ColorsBox";
+import ColorBox from "./ColorBox";
 import PaletteFooter from "./PaletteFooter";
 
 class SingleColorPalette extends Component {
@@ -34,7 +34,7 @@ class SingleColorPalette extends Component {
         key={color.name}
         name={color.name}
         background={color[format]}
-        showLink={false}
+        showingFullPalette={false}
       />
     ));
     return (
