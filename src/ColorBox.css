@@ -58,6 +58,14 @@
   padding: 10px;
 }
 
+.light-text {
+  color: white;
+}
+
+.ColorBox .dark-text {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 .see-more {
   background: rgba(255, 255, 255, 0.3);
   position: absolute;
