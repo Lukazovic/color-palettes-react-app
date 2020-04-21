@@ -34,7 +34,7 @@ class Navbar extends Component {
         <Link className={classes.logo} to="/">
           <div className={classes.logoItems}>
             <img src={logo} alt="Color palette" />
-            <span>Color Piker</span>
+            <span>Color Palettes</span>
           </div>
         </Link>
         {showingAllColors && (
