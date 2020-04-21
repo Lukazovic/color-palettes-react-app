@@ -11,7 +11,7 @@ export default {
     },
   },
   colors: {
-    backgroundColor: "#dea1e4",
+    backgroundColor: "#b5bbbf",
     height: "150px",
     width: "100%",
     borderRadius: "5px",
