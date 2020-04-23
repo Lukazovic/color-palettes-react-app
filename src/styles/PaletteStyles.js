@@ -3,7 +3,7 @@ export default {
     height: "100vh",
     display: "flex",
     flexDirection: "column",
-    overflow: "hidden",
+    overflowX: "hidden",
   },
   colors: {
     height: "90%",
