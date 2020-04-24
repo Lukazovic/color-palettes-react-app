@@ -69,6 +69,7 @@ class NewPaletteForm extends Component {
     newPalette.colors = this.state.colors;
     this.props.savePalette(newPalette);
     this.props.history.push("/");
+    window.location.reload();
   }
 
   clearColors() {
