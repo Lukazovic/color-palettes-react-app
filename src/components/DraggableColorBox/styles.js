@@ -1,5 +1,5 @@
 import chroma from "chroma-js";
-import sizes from "../utils/sizes";
+import sizes from "../../utils/sizes";
 
 const styles = {
   root: {

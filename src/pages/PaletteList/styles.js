@@ -1,5 +1,5 @@
-import sizes from "../utils/sizes";
-import ConfettiDoodles from "./ConfettiDoodles.svg";
+import sizes from "../../utils/sizes";
+import ConfettiDoodles from "../../images/ConfettiDoodles.svg";
 
 export default {
   "@global": {

@@ -11,10 +11,10 @@ import CloseIcon from "@material-ui/icons/Close";
 import CheckIcon from "@material-ui/icons/Check";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import { withStyles } from "@material-ui/styles";
-import MiniPalette from "./MiniPalette";
+import MiniPalette from "../../components/MiniPalette";
 import blue from "@material-ui/core/colors/blue";
 import red from "@material-ui/core/colors/red";
-import styles from "./styles/PaletteListStyles";
+import styles from "./styles";
 
 class PaletteList extends Component {
   constructor(props) {
