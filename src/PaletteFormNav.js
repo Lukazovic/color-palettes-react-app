@@ -19,6 +19,7 @@ class PaletteFormNav extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.showForm = this.showForm.bind(this);
     this.hideForm = this.hideForm.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleChange(evt) {
@@ -31,6 +32,11 @@ class PaletteFormNav extends Component {
 
   hideForm() {
     this.setState({ formShowing: false });
+  }
+
+  handleClick() {
+    this.props.history.push("/");
+    window.location.reload();
   }
 
   render() {
@@ -68,15 +74,14 @@ class PaletteFormNav extends Component {
             </Typography>
           </Toolbar>
           <div className={classes.navButtons}>
-            <Link to="/">
-              <Button
-                variant="contained"
-                color="secondary"
-                className={classes.button}
-              >
-                Go Back
-              </Button>
-            </Link>
+            <Button
+              variant="contained"
+              color="secondary"
+              className={classes.button}
+              onClick={this.handleClick}
+            >
+              Go Back
+            </Button>
             <Button
               variant="contained"
               color="primary"

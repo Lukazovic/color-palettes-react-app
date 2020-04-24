@@ -102,6 +102,7 @@ class NewPaletteForm extends Component {
           handleDrawerOpen={this.handleDrawerOpen}
           palettes={palettes}
           handleSubmit={this.handleSubmit}
+          history={this.props.history}
         />
         <Drawer
           className={classes.drawer}
