@@ -18,6 +18,7 @@
 - [React router](https://www.npmjs.com/package/react-router-dom)
 - [Material UI](https://material-ui.com/pt/)
 - [Chroma JS](https://github.com/gka/chroma.js/)
+- [React Beautiful DND](https://github.com/atlassian/react-beautiful-dnd)
 - [Emoji Mart](https://github.com/missive/emoji-mart)
 - [React Sortable HOC](https://github.com/clauderic/react-sortable-hoc)
 - [React Copy to Clipboard](https://github.com/nkbt/react-copy-to-clipboard)
