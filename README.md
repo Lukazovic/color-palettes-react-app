@@ -32,9 +32,6 @@ This is a project I've made to learn [React](https://reactjs.org). A clone of we
 
 I've also learned how to deal with Draggable boxes even up and down and also side to side. React Sortable HOC in order to sort the boxes after the user drag and drop. [Material UI](https://material-ui.com/pt/) Icons and Components. ChromaJS to get the Luminance of each color box and chance the text colors to make it visible. [Emoji Picker](https://github.com/missive/emoji-mart) so the user can select and emoji the add to the Color Palette. Also I've learned to with JSS in React to style the Application and much more.
 
-This App is part of the [Modern React Bootcamp](https://www.udemy.com/course/modern-react-bootcamp) made by [Colt Steele](https://github.com/Colt)
-
-
 ## 💻 How to Use
 
 #### Online
