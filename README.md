@@ -1,68 +1,98 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">Color Palettes</h1>
+<h4 align="center">
+  <img src="./public/app-preview.gif" /><br>
+</h4>
 
-## Available Scripts
+<p align="center">
+  <a href="#wrench-built-with">Built With</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#page_facing_up-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-use">How to Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#heart_eyes-pages">Pages</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-contribute">How to Contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#pencil-author">Author</a>
+</p>
 
-In the project directory, you can run:
+## :wrench: Built With
 
-### `yarn start`
+- [React](https://reactjs.org)
+- [React router](https://www.npmjs.com/package/react-router-dom)
+- [Material UI](https://material-ui.com/pt/)
+- [Chroma JS](https://github.com/gka/chroma.js/)
+- [Emoji Mart](https://github.com/missive/emoji-mart)
+- [React Sortable HOC](https://github.com/clauderic/react-sortable-hoc)
+- [React Copy to Clipboard](https://github.com/nkbt/react-copy-to-clipboard)
+- [React Form Validation](https://www.npmjs.com/package/react-form-validator-core)
+- [React Transition Group](https://github.com/reactjs/react-transition-group)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## :page_facing_up: About
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This is a project I've made to learn [React](https://reactjs.org). A clone of websites like [Flat UI Colors](https://flatuicolors.com/) and [Material UI Colors](http://materialuicolors.co/?utm_source=launchers). It was important so I managed to learn patterns to deal in a big project with React and how to make a Responsive App.
 
-### `yarn test`
+I've also learned how to deal with Draggable boxes even up and down and also side to side. React Sortable HOC in order to sort the boxes after the user drag and drop. [Material UI](https://material-ui.com/pt/) Icons and Components. ChromaJS to get the Luminance of each color box and chance the text colors to make it visible. [Emoji Picker](https://github.com/missive/emoji-mart) so the user can select and emoji the add to the Color Palette. Also I've learned to with JSS in React to style the Application and much more.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This App is part of the [Modern React Bootcamp](https://www.udemy.com/course/modern-react-bootcamp) made by [Colt Steele](https://github.com/Colt)
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 💻 How to Use
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### Online
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can use the App in this site: 
 
-### `yarn eject`
+#### Locally
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Clone the project: `git clone https://github.com/Lukazovic/color-palettes-react-app.git`;
+- Go to the project folder: `cd color-palettes-react-app`;
+- Download the dependencies: `npm install`;
+- Start the application: `npm start`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+It will open a browser page (if it doesn't, go to [http://localhost:3000](http://localhost:3000/)).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## :heart_eyes: Pages
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<h3 align="center">Home Page</h3>
+<h4 align="center">
+  <img src="./public/home-page.png" /><br>
+</h4>
 
-## Learn More
+In this page you will be able to see all the Palettes including the ones you created. Also, here's where you can delete the Palettes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h3 align="center">Palette Page</h3>
+<h4 align="center">
+  <img src="./public/palette-page.png" /><br>
+</h4>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+In this page you can see all the colors in a specific Palette. You can copy the color you want by click in the box and select if you want it in HEX, RGB or RGBA. Also you can make the colors lighter or darker.
 
-### Code Splitting
+<h3 align="center">Single Color Page</h3>
+<h4 align="center">
+  <img src="./public/single-color-page.png" /><br>
+</h4>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+In this page you can see all the shades of a specific color and copy just like the previous one.
 
-### Analyzing the Bundle Size
+<h3 align="center">Create New Palette Page</h3>
+<h4 align="center">
+  <img src="./public/create-palette-page.png" /><br>
+</h4>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+This is the page where you can create your Palette. You are able to select the color in a Color Picker and give it a name or even generate Random Colors to get some ideas of colors. **You can even organize the color boxes by dragging and drop them in the place you want**.
 
-### Making a Progressive Web App
+After select the colors you want in your pallete and how they are organized, you can choose a Name and an Emoji to your Palette.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## 🤔 How to Contribute
 
-### Advanced Configuration
+- Fork this repository;
+- Create your branch with your feature: `git checkout -b my-feature`;
+- Commit your feature: `git commit -m 'feat: My new feature'`;
+- Push to your branch: `git push origin my-feature`.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Then merge your pull request, you can now delete your branch
 
-### Deployment
+## :pencil: Author
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Lukazovic"><img src="https://avatars0.githubusercontent.com/u/54550926?s=460&u=cdeeac652ce0597a986fbdcff6e249ad27a1f1da&v=4" width="100px;" alt=""/><br /><sub><b>Lucas Vieira</b></sub></a><br /></td>
+  <tr>
+</table>
