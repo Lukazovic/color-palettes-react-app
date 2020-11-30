@@ -17,6 +17,10 @@ export default {
     width: "100%",
     borderRadius: "5px",
     overflow: "hidden",
+
+    display: 'grid',
+    gridTemplateColumns: 'repeat(5, 1fr)',
+    gridTemplateRows: 'repeat(4, 1fr)',
   },
   title: {
     display: "flex",
@@ -33,12 +37,13 @@ export default {
     fontSize: "1.5rem",
   },
   miniColor: {
-    height: "25%",
-    width: "20%",
+    // height: "25%",
+    // width: "20%",
+    height: "100%",
+    width: "100%",
     display: "inline-block",
     margin: "0 auto",
     position: "relative",
-    marginBottom: "-4px",
   },
   deleteIcon: {
     color: "white",

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
 import PaletteMetaForm from "../PaletteMetaForm";
 import classNames from "classnames";
@@ -18,7 +19,6 @@ class PaletteFormNav extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.showForm = this.showForm.bind(this);
     this.hideForm = this.hideForm.bind(this);
-    this.handleClick = this.handleClick.bind(this);
   }
 
   handleChange(evt) {
@@ -31,11 +31,6 @@ class PaletteFormNav extends Component {
 
   hideForm() {
     this.setState({ formShowing: false });
-  }
-
-  handleClick() {
-    this.props.history.push("/");
-    window.location.reload();
   }
 
   render() {
@@ -78,14 +73,15 @@ class PaletteFormNav extends Component {
             </Typography>
           </Toolbar>
           <div className={classes.navButtons}>
-            <Button
-              variant="contained"
-              color="secondary"
-              className={classes.button}
-              onClick={this.handleClick}
-            >
-              Go Back
-            </Button>
+            <Link to="/">
+              <Button
+                variant="contained"
+                color="secondary"
+                className={classes.button}
+                >
+                Go Back
+              </Button>
+            </Link>
             <Button
               variant="contained"
               color="primary"
