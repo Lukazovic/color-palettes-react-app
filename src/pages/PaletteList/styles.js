@@ -26,6 +26,7 @@ export default {
   },
   container: {
     width: "50%",
+    paddingBottom: "3em",
     display: "flex",
     alignItems: "flex-start",
     flexDirection: "column",
